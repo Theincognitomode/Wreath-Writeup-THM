@@ -1,6 +1,4 @@
-
 **TASK 6: Exploitation**  
-
 
 In this task we will be exploiting the vuln that we found while solving the TASK 5
 
@@ -44,9 +42,23 @@ If you are facing issue with the connection as _connection being refused_ then u
 
 For solving this question searched for https://www.cyberciti.biz/faq/where-are-the-passwords-of-the-users-located-in-linux/
 
+and type the following command in the cmd prompt `cat /etc/shadow`
+
+The cat command reads each File parameter in sequence and writes it to standard output. If you do not specify a file name, the cat command reads from standard input.
 
 
+![Screenshot_2023-08-01_16_50_00](https://github.com/Anirudh-Saxena/Wreath-Writeup-THM/assets/73027020/ffb278ff-9a9e-435d-8244-3c2d8c50cd5b)
 
+
+**Q. What is the root user's password hash?**
+
+The password is: $6$i9vT8tk3SoXXxK2P$HDIAwho9FOdd4QCecIJKwAwwh8Hwl.BdsbMOUAd3X/chSCvrmpfy.5lrLgnRVNq6/6g0PxK9VqSdy47/qKXad1::0:99999:7:::
+
+Now lets follow the other steps and we are ready to go for the next taskk....!!
+
+Download the key (copying and pasting it to a file on your own Attacking Machine works), then use the command chmod 600 KEY_NAME (substituting in the name of the key) to obtain persistent access to the box.
+
+For this we have to look for some useful files that can help us to obtain a key that will be able to connect to a server with SSH 
 
 
 
