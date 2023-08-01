@@ -34,7 +34,19 @@ anyhow the **ans : root**
 
 Now we have to do the reverse connection for this we will have to type the shell and provide the ip address and port number in it and then using the netcat we can connect to this server, more like pwn challenges in ctf
 
-`nc -lvnp <portnumber the one you choose>`
+**NOTE: Make sure to press enter only after executing this command: `sudo nc -lvnp <portnumber>`** cause we want to do the reverse connection and by doing so we can hear what are the activites going on the other side.. 
+![Screenshot_2023-08-01_16_28_43](https://github.com/Anirudh-Saxena/Wreath-Writeup-THM/assets/73027020/1d0f1380-e6af-42a6-842f-ba07b04d0702)
+
+
+
+If you are facing issue with the connection as _connection being refused_ then use the command `chmod +x ./CVE...`
+
+
+For solving this question searched for https://www.cyberciti.biz/faq/where-are-the-passwords-of-the-users-located-in-linux/
+
+
+
+
 
 
 
