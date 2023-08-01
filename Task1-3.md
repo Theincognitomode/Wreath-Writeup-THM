@@ -48,3 +48,11 @@ For doing so follow this steps :
 
 ![image](https://github.com/Anirudh-Saxena/Wreath-Writeup-THM/assets/73027020/f295ea78-a63b-4fb3-9d40-0933250befde)
 
+
+**TASK 3 : BackStory**
+
+This tasks just tells you about the backside story of this room 
+
+Just read it and then click on question completed you are good to goo !!!
+**Letss gooo...**
+
