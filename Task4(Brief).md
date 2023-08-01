@@ -31,6 +31,6 @@ After reading all of this we just have to click on questions completed and then 
 Before moving to task 5 make sure to **update your kali machine**
 The command for that is simple :
 make sure you are root before rolling out these commands : 
-sudo apt-get update && apt-get upgrade 
+`sudo apt-get update && apt-get upgrade` 
 
 
