@@ -56,9 +56,29 @@ The password is: $6$i9vT8tk3SoXXxK2P$HDIAwho9FOdd4QCecIJKwAwwh8Hwl.BdsbMOUAd3X/c
 
 Now lets follow the other steps and we are ready to go for the next taskk....!!
 
-Download the key (copying and pasting it to a file on your own Attacking Machine works), then use the command chmod 600 KEY_NAME (substituting in the name of the key) to obtain persistent access to the box.
+**Q. What is the full path to this file??**
+
+Ans: /root/.ssh/id_rsa
+
+Download the key (copying and pasting it to a file on your own Attacking Machine works), then use the command `chmod 600 KEY_NAME` (substituting in the name of the key) to obtain persistent access to the box.
 
 For this we have to look for some useful files that can help us to obtain a key that will be able to connect to a server with SSH 
 
+By using the `cat` command we can view the key
 
+`cat id_sha`
 
+The file will have contents like this 
+![Screenshot_2023-08-02_02_12_35](https://github.com/Anirudh-Saxena/Wreath-Writeup-THM/assets/73027020/f1d3c8ae-d667-4649-b329-10f63d7175b6)
+Here we can see that its a private key so we can use this key to connect with the ip of the machine to gain root privilages!!
+
+In my case i wasnt able to download this file to my local machine so i copied the contents of the files and made a new file with the same name i.e _id_rsa_
+
+After doing so i tried to connect with ssh server using the private key to gain the access...
+
+![Screenshot_2023-08-02_02_15_11](https://github.com/Anirudh-Saxena/Wreath-Writeup-THM/assets/73027020/8e7126a1-c3d6-4492-b362-1fafdda9f27b)
+Might be wondering why `chmod 600` ??
+
+chmod 600 is a command used to set file permissions in Linux. It means that only the owner of the file has full read and write access to it. Once a file permission is set to 600, no one else can access the file1. The command sets permissions so that the user/owner can read and write but not execute, while the group and others have no access to the file.
+
+With this lets move to another taskk....
