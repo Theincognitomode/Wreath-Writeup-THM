@@ -108,14 +108,18 @@ Ans: lets try to solve this using `man` command and see what are the options ava
 Chatgpt for the win lol
 
 # Step 1: Generate SSL certificate and private key
-openssl req -newkey rsa:2048 -nodes -keyout key.pem -x509 -days 365 -out certificate.pem
+
+        openssl req -newkey rsa:2048 -nodes -keyout key.pem -x509 -days 365 -out certificate.pem
 
 # Step 2: Start the SSL server (destination server)
-socat OPENSSL-LISTEN:443,reuseaddr,fork,cert=certificate.pem,key=key.pem TCP4:destination_server_ip:destination_server_port &
+
+    socat OPENSSL-LISTEN:443,reuseaddr,fork,cert=certificate.pem,key=key.pem TCP4:destination_server_ip:destination_server_port &
 
 # Step 3: Start the SSL client (source server)
-socat TCP4-LISTEN:local_port,reuseaddr,fork OPENSSL:destination_server_ip:443,cafile=certificate.pem &
+
+    socat TCP4-LISTEN:local_port,reuseaddr,fork OPENSSL:destination_server_ip:443,cafile=certificate.pem &
 
 # Step 4: Test the encrypted port forward
-echo "Hello, World!" | socat - TCP4:localhost:local_port
+
+    echo "Hello, World!" | socat - TCP4:localhost:local_port
   
