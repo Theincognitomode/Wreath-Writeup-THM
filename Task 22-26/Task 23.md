@@ -17,4 +17,5 @@ If you want to work with the starkiller you can skip the upper process..
 ![Screenshot_2023-08-09_12_01_21](https://github.com/Anirudh-Saxena/Wreath-Writeup-THM/assets/73027020/901e7b2a-6391-4d8e-9867-8f3a9db636bb)
 
 
+Now lets move forward with task 24..
 
